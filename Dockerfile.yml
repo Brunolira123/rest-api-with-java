@@ -1,0 +1,32 @@
+version: '3.9'
+services:
+  db:
+    image: postgres:16.2-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: rest_api
+    ports:
+      - 5432:5432
+    expose:
+      - 5432
+    networks:
+      - bruno-network
+  rest-api:
+    image: brunoliragarcia/rest-api
+    restart: always
+    build: C:\Users\User\Documents\api\rest-with-spring-boot-and-java
+    working_dir: C:\Users\User\Documents\api\rest-with-spring-boot-and-java
+    environment:
+      SPRING.DATASOURCE.URL: dbc:postgresql://db:5432/rest_api
+      SPRING.DATASOURCE.USERNAME: postgres
+      SPRING.DATASOURCE.PASSWORD: postgres
+    ports:
+      - 80:80
+    command: mvn spring-boot:run
+    depends_on:
+      - db
+networks:
+  bruno-network:
+    driver: bridge
