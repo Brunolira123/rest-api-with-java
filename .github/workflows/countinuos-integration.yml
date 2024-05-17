@@ -29,7 +29,7 @@ jobs:
       run: mvn clean package
 
     - name: Docker Compose build
-      working-directory: ./rest-api-with-java
+      working-directory: rest-api-with-java
       run: docker compose build
 
     - name: Push to Docker Hub Container Registry
