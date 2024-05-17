@@ -1,6 +1,6 @@
-# Curso de Desenvolvimento de APIs com Spring Boot 3 #
+# APIs de biblioteca com Spring Boot 3 #
 
-Bem-vindo ao repositório do curso Desenvolvimento de APIs com Spring Boot 3. Este curso visa especializar desenvolvedores no desenvolvimento de APIs utilizando a mais nova versão do Spring Boot, abordando tanto a teoria quanto a prática de forma intensiva.
+Bem-vindo ao repositório  de APIs com Spring Boot 3. 
 
 ## Ferramentas: ##
 
