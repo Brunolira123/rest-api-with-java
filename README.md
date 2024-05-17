@@ -4,7 +4,7 @@ Bem-vindo ao repositório do curso Desenvolvimento de APIs com Spring Boot 3. Es
 
 ## Ferramentas: ##
 
-** Spring Boot 3 **
+*Spring Boot 3 
 ** Java 18 **
 ** Flyway (Migrations) **
 ** PostgreSQL **
